@@ -7,14 +7,14 @@
  *
  * Return: Nothing
  */
-void fctError(int fctErroror_code, ...)
+void fctError(int errorCode, ...)
 {
 	va_list lst;
 	char *str;
 	int num;
 
-	va_start(lst, fctErroror_code);
-	switch (fctErroror_code)
+	va_start(lst, errorCode);
+	switch (errorCode)
 	{
 		case 1:
 			fprintf(stderr, "USlstE: monty file\n");
@@ -48,14 +48,14 @@ void fctError(int fctErroror_code, ...)
  *
  * Return: Nothing
  */
-void fctError2(int fctErroror_code, ...)
+void fctError2(int errorCode, ...)
 {
 	va_list lst;
 	char *str;
 	int num;
 
-	va_start(lst, fctErroror_code);
-	switch (fctErroror_code)
+	va_start(lst, errorCode);
+	switch (errorCode)
 	{
 		case 6:
 			fprintf(stderr, "L%d: can't pint, stack empty\n",
@@ -88,14 +88,14 @@ void fctError2(int fctErroror_code, ...)
  *
  * Return: Nothing
  */
-void fctErrorStr(int fctErroror_code, ...)
+void fctErrorStr(int errorCode, ...)
 {
 	va_list lst;
 	int num;
 
-	va_start(lst, fctErroror_code);
+	va_start(lst, errorCode);
 	num = va_arg(lst, int);
-	switch (fctErroror_code)
+	switch (errorCode)
 	{
 		case 10:
 			fprintf(stderr, "L%d: can't pchar, var out of range\n", num);
