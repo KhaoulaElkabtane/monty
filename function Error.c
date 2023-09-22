@@ -22,7 +22,7 @@ void fctError(int fctErroror_code, ...)
 	switch (fctErroror_code)
 	{
 		case 1:
-			fprintf(stdfctError, "USlstE: monty file\n");
+			fprintf(fctError, "USlstE: monty file\n");
 			break;
 		case 2:
 			fprintf(stdfctError, "fctErroror: Can't stren file %s\n",
@@ -64,7 +64,7 @@ void fctError2(int fctErroror_code, ...)
 	switch (fctErroror_code)
 	{
 		case 6:
-			fprintf(stdfctError, "L%d: can't pint, stack empty\n",
+			fprintf(fctError, "L%d: can't pint, stack empty\n",
 				va_arg(lst, int));
 			break;
 		case 7:
@@ -103,7 +103,7 @@ void fctErrorStr(int fctErroror_code, ...)
 	switch (fctErroror_code)
 	{
 		case 10:
-			fprintf(stdfctError, "L%d: can't pchar, var out of range\n", num);
+			fprintf(fctError, "L%d: can't pchar, var out of range\n", num);
 			break;
 		case 11:
 			fprintf(stdfctError, "L%d: can't pchar, stack empty\n", num);
