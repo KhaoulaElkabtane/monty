@@ -8,7 +8,7 @@
 
 void filestr(char *nfilem)
 {
-	FILE *file = fstren(nfilem, "r");
+	FILE *file = fopen(nfilem, "r");
 
 	if (nfilem == NULL || file == NULL)
 		fctError(2, nfilem);
@@ -56,7 +56,7 @@ int filePL(char *buf, int nub, int mat)
 	if (buf == NULL)
 		fctError(4);
 
-	str = strtok(buf, delim);
+	str = strtok(buf, del);
 	if (str == NULL)
 		return (mat);
 	var = strtok(NULL, delim);
@@ -128,7 +128,7 @@ void fileFind(char *str, char *var, int ln, int mat)
  * @mat: mat specifier. If 0 nds will be entered as a stack.
  * if 1 nds will be entered as a queue.
  */
-void fctfile(str_func func, char *str, char *val, int ln, int mat)
+void fctfile(op_func func, char *str, char *val, int ln, int mat)
 {
 	stack_t *nd;
 	int value;
