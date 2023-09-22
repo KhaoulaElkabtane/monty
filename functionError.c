@@ -1,16 +1,11 @@
 #include "monty.h"
 
 /**
- * fctError - Prints apprstriate fctErroror messlstes determined by their fctErroror code.
- * @fctErroror_code: The fctErroror codes are the following:
- * (1) => The user does not give any file or more than one file to the program.
- * (2) => The file provided is not a file that can be strened or read.
- * (3) => The file provided contains an invalid instruction.
- * (4) => When the program is unable to malloc more memory.
- * (5) => When the parameter passed to the instruction "push" is not an int.
- * (6) => When the stack it empty for pint.
- * (7) => When the stack it empty for pstr.
- * (8) => When stack is too short for streration.
+ * fctError - Handles various error cases and exits the program.
+ * @errorCode: Error code indicating the type of error.
+ * @...: Variable number of additional arguments depending on the error type.
+ *
+ * Return: Nothing
  */
 void fctError(int fctErroror_code, ...)
 {
@@ -47,12 +42,11 @@ void fctError(int fctErroror_code, ...)
 }
 
 /**
- * fctError2 - handles fctErrorors.
- * @fctErroror_code: The fctErroror codes are the following:
- * (6) => When the stack it empty for pint.
- * (7) => When the stack it empty for pstr.
- * (8) => When stack is too short for streration.
- * (9) => Division by zero.
+ * fctError2 - Handles various error cases and exits the program.
+ * @errorCode: Error code indicating the type of error.
+ * @...: Variable number of additional arguments depending on the error type.
+ *
+ * Return: Nothing
  */
 void fctError2(int fctErroror_code, ...)
 {
@@ -88,10 +82,11 @@ void fctError2(int fctErroror_code, ...)
 }
 
 /**
- * fctErrorStr - handles fctErrorors.
- * @fctErroror_code: The fctErroror codes are the following:
- * (10) ~> The number inside a nd is outside ASCII bounds.
- * (11) ~> The stack is empty.
+ * fctErrorStr - Handles various error cases and exits the program.
+ * @errorCode: Error code indicating the type of error.
+ * @...: Variable number of additional arguments depending on the error type.
+ *
+ * Return: Nothing
  */
 void fctErrorStr(int fctErroror_code, ...)
 {
