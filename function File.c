@@ -59,7 +59,7 @@ int filePL(char *buf, int nub, int mat)
 	str = strtok(buf, del);
 	if (str == NULL)
 		return (mat);
-	var = strtok(NULL, delim);
+	var = strtok(NULL, del);
 
 	if (strcmp(str, "stack") == 0)
 		return (0);
@@ -128,7 +128,7 @@ void fileFind(char *str, char *var, int ln, int mat)
  * @mat: mat specifier. If 0 nds will be entered as a stack.
  * if 1 nds will be entered as a queue.
  */
-void fctfile(op_func func, char *str, char *val, int ln, int mat)
+void fctfile(str_ft func, char *str, char *val, int ln, int mat)
 {
 	stack_t *nd;
 	int value;
