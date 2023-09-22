@@ -51,7 +51,7 @@ void fileRD(FILE *file)
 int filePL(char *buf, int nub, int mat)
 {
 	char *str, *var;
-	const char *del= "\n ";
+	const char *del = "\n ";
 
 	if (buf == NULL)
 		fctError(4);
