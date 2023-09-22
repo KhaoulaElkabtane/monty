@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
-		fprintf(stdfctError, "USlstE: monty file\n");
+		fprintf(stderr, "USlstE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 	filestr(argv[1]);
