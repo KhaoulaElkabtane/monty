@@ -22,22 +22,22 @@ void fctError(int fctErroror_code, ...)
 	switch (fctErroror_code)
 	{
 		case 1:
-			fprintf(fctError, "USlstE: monty file\n");
+			fprintf(stderr, "USlstE: monty file\n");
 			break;
 		case 2:
-			fprintf(stdfctError, "fctErroror: Can't stren file %s\n",
+			fprintf(stderr, "fctErroror: Can't stren file %s\n",
 				va_arg(lst, char *));
 			break;
 		case 3:
 			num = va_arg(lst, int);
 			str = va_arg(lst, char *);
-			fprintf(stdfctError, "L%d: unknown instruction %s\n", num, str);
+			fprintf(stderr, "L%d: unknown instruction %s\n", num, str);
 			break;
 		case 4:
-			fprintf(stdfctError, "fctErroror: malloc failed\n");
+			fprintf(stderr, "fctErroror: malloc failed\n");
 			break;
 		case 5:
-			fprintf(stdfctError, "L%d: uslste: push integer\n", va_arg(lst, int));
+			fprintf(stderr, "L%d: uslste: push integer\n", va_arg(lst, int));
 			break;
 		default:
 			break;
@@ -64,20 +64,20 @@ void fctError2(int fctErroror_code, ...)
 	switch (fctErroror_code)
 	{
 		case 6:
-			fprintf(fctError, "L%d: can't pint, stack empty\n",
+			fprintf(stderr, "L%d: can't pint, stack empty\n",
 				va_arg(lst, int));
 			break;
 		case 7:
-			fprintf(stdfctError, "L%d: can't pstr an empty stack\n",
+			fprintf(stderr, "L%d: can't pstr an empty stack\n",
 				va_arg(lst, int));
 			break;
 		case 8:
 			num = va_arg(lst, unsigned int);
 			str = va_arg(lst, char *);
-			fprintf(stdfctError, "L%d: can't %s, stack too short\n", num, str);
+			fprintf(stderr, "L%d: can't %s, stack too short\n", num, str);
 			break;
 		case 9:
-			fprintf(stdfctError, "L%d: division by zero\n",
+			fprintf(stderr, "L%d: division by zero\n",
 				va_arg(lst, unsigned int));
 			break;
 		default:
@@ -103,10 +103,10 @@ void fctErrorStr(int fctErroror_code, ...)
 	switch (fctErroror_code)
 	{
 		case 10:
-			fprintf(fctError, "L%d: can't pchar, var out of range\n", num);
+			fprintf(stderr, "L%d: can't pchar, var out of range\n", num);
 			break;
 		case 11:
-			fprintf(stdfctError, "L%d: can't pchar, stack empty\n", num);
+			fprintf(stderr, "L%d: can't pchar, stack empty\n", num);
 			break;
 		default:
 			break;
