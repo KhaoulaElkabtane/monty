@@ -14,7 +14,7 @@ void divides(stack_t **hd, unsigned int count)
 	while (stc)
 	{
 		stc = stc->next;
-		len++;
+		l++;
 	}
 	if (l < 2)
 	{
