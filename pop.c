@@ -14,7 +14,7 @@ void pop(stack_t **hd, unsigned int count)
 		fprintf(stderr, "L%d: can't pop an empty stack\n", count);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*hd);
+		frStack(*hd);
 		exit(EXIT_FAILURE);
 	}
 	stc = *hd;
