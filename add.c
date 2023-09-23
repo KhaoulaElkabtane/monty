@@ -28,5 +28,5 @@ void add(stack_t **hd, unsigned int count)
 	a = stc->n + stc->next->n;
 	stc->next->n = a;
 	*hd = stc->next;
-	free(h);
+	free(stc);
 }
