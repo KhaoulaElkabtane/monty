@@ -12,7 +12,7 @@ void f_mod(stack_t **hd, unsigned int count)
 	int l = 0, a;
 
 	stc = *hd;
-	while (h)
+	while (stc)
 	{
 		stc = stc->next;
 		l++;
