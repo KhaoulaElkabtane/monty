@@ -46,7 +46,7 @@ int execute(char *cont, stack_t **stk, unsigned int count, FILE *f)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", count, str);
 		fclose(f);
 		free(cont);
-		free_stack(*stk);
+		frStack(*stk);
 		exit(EXIT_FAILURE); }
 	return (1);
 }
