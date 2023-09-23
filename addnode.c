@@ -16,7 +16,7 @@ void nodeAdd(stack_t **hd, int nv)
 	{ printf("Error\n");
 		exit(0); }
 	if (a)
-		a->prev = neode;
+		a->prev = node;
 	node->n = nv;
 	node->next = *hd;
 	node->prev = NULL;
