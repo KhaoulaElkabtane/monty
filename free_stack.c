@@ -3,7 +3,7 @@
 * frsStack - frees a doubly linked list
 * @hd: head of the stack
 */
-void frsStack(stack_t *head)
+void frsStack(stack_t *hd)
 {
 	stack_t *a;
 
