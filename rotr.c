@@ -5,7 +5,7 @@
   *@count: line_number
   *Return: Nothing
  */
-void f_rotr(stack_t **hd, __attribute__((unused)) unsigned int count)
+void rotr(stack_t **hd, __attribute__((unused)) unsigned int count)
 {
 	stack_t *cp;
 
