@@ -42,7 +42,7 @@ void addQueue(stack_t **hd, int nv)
 	}
 	else
 	{
-		aux->next = new_node;
-		new_node->prev = aux;
+		a->next = node;
+		node->prev = a;
 	}
 }
