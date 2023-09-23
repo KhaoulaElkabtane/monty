@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
-  *f_sub- sustration
+  *sub- sustration
   *@hd: stack head
   *@count: line_number
   *Return: Nothing
  */
-void f_sub(stack_t **hd, unsigned int count)
+void sub(stack_t **hd, unsigned int count)
 {
 	stack_t *a;
 	int sub, node;
