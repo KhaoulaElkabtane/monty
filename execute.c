@@ -18,7 +18,7 @@ int execute(char *cont, stack_t **stk, unsigned int count, FILE *f)
 				{"sub", f_sub},
 				{"div", divides},
 				{"mul", f_mul},
-				{"mod", f_mod},
+				{"mod", mod},
 				{"pchar", f_pchar},
 				{"pstr", f_pstr},
 				{"rotl", f_rotl},
