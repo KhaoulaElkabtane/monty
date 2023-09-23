@@ -29,7 +29,7 @@ void err(int errCode, ...)
 				va_arg(lst, char *));
 			break;
 		case 3:
-			l_num = va_arg(lst, int);
+			num = va_arg(lst, int);
 			str = va_arg(lst, char *);
 			fprintf(stderr, "L%d: unknown instruction %s\n", num, str);
 			break;
